@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #1a1a1a;
+            color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .responsive-div{
+            background-color: #e252ab;
+            max-width: 1200px;
+            margin: 10px;
+            padding: 20px;
+        }
+        @media (max-width:700px){
+                body{
+                    align-items: flex-start;
+                }
+                .responsive-div{
+                    background-color: #dfd0a6;
+                }
+        }
+        @media (max-width:1024px) and (min-width:701px){
+            body{
+                align-items: flex-end;
+            }
+            .responsive-div{
+                background-color: #817878;
+            }
+        }
+       
+                
+    </style>
+</head>
+<body>
+    <div class="responsive-div">
+        The Beautiful web site comes from proper design and this function properly with a excellent manner.
+    </div>
+</body>
+</html>
